@@ -137,9 +137,9 @@ if st.checkbox('Show average attrition rate by hometown plot'):
     st.pyplot(fig3)
 
 st.header('Attrition rate and age')
-st.write('''In order to explore the relationship between employees age and
-            attrition rate, a 2d-histogram which contains such information
-            was performed ''')
+st.write('''In order to explore the relationship between the age of the
+            employees and attrition rate, there was performed a 
+            2d-histogram which contains such information ''')
 if st.checkbox('Show 2-D histogram'):
     fig4 = plt.figure(figsize=(10, 4))
     plt.hist2d(emplo['Attrition_rate'], emplo['Age'], 
@@ -154,9 +154,10 @@ st.write('''We are observing that the relationship between age and
             value is not observed for a particular age''')
 
 st.header('Attrition rate and time of service ')
-st.write('''In order to explore the relationship between employees time of
-            service and attrition rate, a 2d-histogram which contains such 
-            information was performed ''')
+st.write('''In order to explore the relationship between the time of
+            service of the employees  and attrition rate, a 
+            2d-histogram which contains such information was 
+            performed ''')
 if st.checkbox('Show 2-D histogram for the time of service'):
      fig5 = plt.figure(figsize=(10, 4))
      plt.hist2d(emplo['Attrition_rate'], emplo['Time_of_service'], 
